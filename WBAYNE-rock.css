@@ -1,0 +1,426 @@
+body {
+  background-color: #EAEAEA;
+  color: #666666;
+  font-family: Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-color: #cf5430;
+}
+
+header {
+  background-color: #6e362c;
+  color: #FFFFFF;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  font-weight: bold;
+  padding: 0;
+  font-size: 120%;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  font-size: 1.2em;
+}
+
+nav ul li {
+  border-bottom: 1px #6e362c solid;
+}
+
+nav a {
+  text-decoration: none;
+  transition: color 3s;
+  transition-timing-function: ease-out;
+}
+
+nav a:link {
+  color: #cf5430;
+}
+
+nav a:visited {
+  color: #6e362c;
+}
+
+nav a:hover {
+  color: #FF3B30;
+}
+
+h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: 0.25em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+h2 {
+  color: #f59a45;
+  font-family: Georgia, 'Times New Roman', serif;
+  text-shadow: 1px 1px 1px #CCCCCC;
+}
+
+h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #6e362c;
+}
+
+dt {
+  color: #8a6f64;
+}
+
+footer {
+  background-color: #FFFFFF;
+  font-size: 75%;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', serif;
+  text-align: center;
+  padding: 2em;
+}
+
+.resort {
+  color: #8a6f64;
+  font-weight: bold;
+}
+
+#contact {
+  font-size: 90%;
+}
+
+#wrapper {
+  background-image: linear-gradient(#FFFFFF, #cf5430);
+}
+
+main {
+  padding: 1px 20px 20px 30px;
+  display: block;
+  background-color: #FFFFFF;
+  padding-left: 30px;
+  overflow: auto;
+}
+
+main ul {
+  list-style-image: url(marker.gif);
+}
+
+#homehero {
+  background-image: url(cp-1.jpg);
+  height: 300px;
+  max-width: 1000px;
+  margin: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+}
+
+#shoeHero {
+  background-image: url(shoes.jpg);
+  height: 300px;
+  max-width: 1000px;
+  margin: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #FFFFFF;
+}
+
+#styleHero {
+  background-image: url(styles.jpg);
+  height: 300px;
+  max-width: 1000px;
+  margin: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #FFFFFF;
+}
+
+#holdHero {
+  background-image: url(holds.jpg);
+  height: 300px;
+  max-width: 1000px;
+  margin: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+}
+
+#gripHero {
+  background-image: url(grips.jpg);
+  height: 300px;
+  max-width: 1000px;
+  margin: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #FFFFFF;
+}
+
+#gearHero {
+  background-image: url(gear.jpg);
+  height: 300px;
+  max-width: 1000px;
+  margin: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #FFFFFF;
+}
+
+table {
+  border: 2px solid #f59a45;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 0.5em;
+  border: 2px solid #f59a45;
+}
+
+td {
+  text-align: center;
+}
+
+.text {
+  text-align: left;
+}
+
+tr:nth-of-type(even) {
+  background-color: #F5FAFC;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+input, textarea {
+  margin-bottom: .5em;
+}
+
+video, embed {
+  float: right;
+  padding-left: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  nav ul li {
+    border: none;
+  }
+
+  section {
+    float: right;
+    padding-left: 2em;
+    padding-right: 2em;
+    display: block;
+  }
+
+  .content main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  h2 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+  }
+
+  section {
+    grid-row: 2 / 3;
+    grid-column: auto;
+  }
+
+  #special {
+    grid-row: auto;
+    grid-column: 1 / 5;
+  }
+
+  footer {
+    grid-row: auto;
+    grid-column: 1 / 5;
+  }
+
+  form {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  input, textarea {
+    margin-bottom: .5em;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 6em 1fr;
+    width: 60%;
+    display: grid;
+    grid-gap: 1em;
+    grid-row: auto;
+    text-align: left;
+  }
+
+  #mySubmit {
+    display: grid;
+    grid-column: 2/3
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    align-items: flex-start;
+  }
+
+  nav {
+    font-weight: bold;
+    padding: 1.5em;
+    font-size: 120%;
+    float: left;
+    width: 0px;
+  }
+
+  #wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #cf5430;
+    background-image: linear-gradient(#FFFFFF, #cf5430);
+    border-width: 1px;
+    border-color: #6e362c;
+    min-width: 960px;
+    max-width: 2048px;
+    box-shadow: 3px 3px 3px #333333;
+  }
+
+  header {
+    background-color: #6e362c;
+    color: #FFFFFF;
+    text-align: center;
+    height: 120px;
+    padding-left: 3em;
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+  }
+
+  nav {
+    grid-row: 2 / 5;
+    grid-column: 1 / 2;
+  }
+
+  #homehero {
+    background-image: url(cp-1.jpg);
+    height: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-right: auto;
+    margin-left: 190px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  #shoeHero {
+    background-image: url(shoes.jpg);
+    height: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-right: auto;
+    margin-left: 190px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #FFFFFF;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  #styleHero{
+    background-image: url(styles.jpg);
+    height: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-right: auto;
+    margin-left: 190px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #FFFFFF;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  #holdHero {
+    background-image: url(holds.jpg);
+    height: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-right: auto;
+    margin-left: 190px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  #gripHero {
+    background-image: url(grips.jpg);
+    height: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-right: auto;
+    margin-left: 190px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #FFFFFF;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  #gearHero {
+    background-image: url(gear.jpg);
+    height: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-right: auto;
+    margin-left: 190px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #FFFFFF;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  main {
+    padding: 1px 20px 20px 30px;
+    background-color: #FFFFFF;
+    margin-left: 190px;
+    padding-left: 30px;
+    overflow: auto;
+  }
+
+  footer {
+    background-color: #FFFFFF;
+    margin-left: 190px;
+    font-size: 75%;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', serif;
+    text-align: center;
+    padding: 2em;
+    display: grid;
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+  }
+}
